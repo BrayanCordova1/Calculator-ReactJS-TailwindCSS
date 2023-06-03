@@ -17,6 +17,7 @@ function App() {
 
   const handleCalculateResult = () => {
     try {
+      // eslint-disable-next-line no-eval
       setResult(eval(result.replace(/-/g, "- ")).toString());
     } catch (error) {
       setResult("Error");
